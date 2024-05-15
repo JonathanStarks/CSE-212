@@ -36,17 +36,16 @@ public static class ArraysTester {
     /// <returns>array of doubles that are the multiples of the supplied number</returns>
     private static double[] MultiplesOf(double number, int length)
     {
-        int i = 1;
+        var numbers = new double[length];
+        //I have spent tens of hours on this assignemnt and I am thoroughly and compleatly annoyed.
+        //int i = 1;
         // TODO Problem 1 Start (don't forget to fill out the 01-prove-response.docx)
-        while (i < length)
+        for (int i = 1; i < length; i++)
         {
-            double[] new_numebr = [number * length];
-            i++
-            return [];
+            numbers[i] = number * i;
         }
-        return [];
+        return (numbers);
     }
-    
     /// <summary>
     /// Rotate the 'data' to the right by the 'amount'.  For example, if the data is 
     /// <c>&lt;List&gt;{1, 2, 3, 4, 5, 6, 7, 8, 9}</c> and an amount is 3 then the list returned should be 
@@ -58,5 +57,14 @@ public static class ArraysTester {
     private static void RotateListRight(List<int> data, int amount)
     {
         // TODO Problem 2 Start (don't forget to fill out the 01-prove-response.docx)
+        // Have the list pop and add to the front of the list
+        for (int i = 0; i < amount; i++)
+        {
+            var thing = data.ElementAt(8);
+            //Console.WriteLine(thing);
+            data.Remove(data.ElementAt(8));
+            data.Insert(0, thing);
+        }
+        return;
     }
 }
