@@ -42,9 +42,9 @@ public static class ArraysTester {
         {
             double[] new_numebr = [number * length];
             i++
-            return new_number;
+            return [];
         }
-        return new_number;
+        return [];
     }
     
     /// <summary>
