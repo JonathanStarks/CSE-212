@@ -44,7 +44,7 @@ public static class ArraysTester {
             i++;
             return[i * number];// replace this return statement with your own
         }
-        retirn
+        return [];
         
         
     }
