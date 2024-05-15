@@ -36,13 +36,15 @@ public static class ArraysTester {
     /// <returns>array of doubles that are the multiples of the supplied number</returns>
     private static double[] MultiplesOf(double number, int length)
     {
-
+        int i = 1;
         // TODO Problem 1 Start (don't forget to fill out the 01-prove-response.docx)
-        for (int length in length)
+        while (i < length)
         {
-            
+            double[] new_numebr = [number * length];
+            i++
+            return new_number;
         }
-        return [];
+        return new_number;
     }
     
     /// <summary>
