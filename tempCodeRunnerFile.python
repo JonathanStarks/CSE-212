@@ -1,0 +1,18 @@
+def adder(A, B):
+    # Code here
+    result = A + B
+    if result == 2:
+        carry = 1
+        result = 0
+    elif A == 1 or B == 1:
+        carry = 0
+        result = 1
+    else:
+        carry = 0
+        result = 0
+    return (result, carry)
+
+print(f"0 + 0 = {adder(0, 0)}")
+print(f"0 + 1 = {adder(0, 1)}")
+print(f"1 + 0 = {adder(1, 0)}")
+print(f"1 + 1 = {adder(1, 1)}")
